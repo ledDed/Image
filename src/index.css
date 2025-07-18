@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg {
+  @apply bg-slate-900
+  w-screen
+  
+  flex
+  flex-col
+  items-center;
+}
+.Image {
+  @apply absolute p-1 h-full  bg-black;
+}
+.outerDiv {
+  @apply object-cover h-screen  bg-red-400 flex flex-col items-center justify-end;
+}
+.InnerDiv {
+  @apply flex flex-col items-center relative w-90 min-h-40 bg-slate-900/30 rounded-4xl;
+}
+
+.innerAttributes {
+  @apply flex;
+}
+.a {
+  @apply text-white;
+}
