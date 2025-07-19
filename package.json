@@ -1,9 +1,12 @@
 {
+  "homepage": "https://ledDed.github.io/image",
   "name": "image",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+     "pre-deploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
